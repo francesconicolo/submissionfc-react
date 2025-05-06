@@ -1,0 +1,45 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "regulation": "Regolamento",
+    "events": "Eventi",
+    "faq": "FAQ",
+    "contact": "Contatti"
+  },
+  "next-event": "Prossimo evento",
+  "previous-events": "Eventi precedenti",
+  "about-us": {
+    "title": "Chi siamo",
+    "foundation": {
+      "title": "Fondazione",
+      "text": "2010: Angelo Pompeo fonda il Pompeo Team, un'accademia marziale dove si studiano: MMA, grappling, brasilian jiu jitsu e lotta olimpica. Nel tempo il team diventa sempre più consolidato e prende parte a competizioni nazionali ed internazionali portando ottimi risultati."
+    },
+    "objectives": {
+      "title": "Obiettivi",
+      "text": "Un grande vissuto agonistico con circuiti di alto livello, podi e tanto altro. Nasce da qui l'idea di creare un circuito innovativo nel suo format e con un importante e reale montepremio, con l'obiettivo di far vivere gli atleti della loro passione e sacrifici"
+    },
+    "mission": {
+      "title": "Missione",
+      "text": "ogliamo portare il grappling e le varie discipline marziali ad un nuovo livello in Italia e in Europa, dove tutti gli atleti possano puntare sullo sport come prospettiva del proprio futuro. Questo inevitabilmente comporterà un incremento della qualità su tutto il territorio ed un sicuro incremento dei suoi praticanti a beneficio di tutti."}
+  },
+  "card-next-event":{
+    "date-event": "Data evento",
+    "closing-date": "Data di chiusura delle iscrizioni",
+    "location": "Luogo",
+    "cashprize": "Montepremi",
+    "time-remaining": "Tempo rimanente",
+    "subscribe": "Iscriviti"
+  },
+  "countdown":{
+    "days": "Giorni",
+    "hours": "Ore",
+    "minutes": "Minuti",
+    "seconds": "Secondi"	
+  },
+  "lang-switch": {
+    "title": "Cambia",
+    "en": "Inglese",
+    "it": "Italiano"
+  }
+}

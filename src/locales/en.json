@@ -1,0 +1,46 @@
+{
+  "navbar":{
+    "home": "Home",
+    "about": "About",
+    "regulation": "Regulation",
+    "events": "Events",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "next-event": "Next event",
+  "previous-events": "Previous events",
+  "about-us": {
+    "title": "About us",
+    "foundation": {
+      "title": "Foundation",
+      "text": "2010: Angelo Pompeo founded the Pompeo Team, a martial arts academy where MMA, grappling, Brazilian jiu-jitsu, and Olympic wrestling are studied. Over time, the team becomes more and more established and participates in national and international competitions, achieving excellent results."
+    },
+    "objectives": {
+      "title": "Objectives",
+      "text": "A great competitive background with high-level circuits, podiums, and much more. This is where the idea of creating an innovative circuit in its format and with an important and real prize pool was born, with the aim of allowing athletes to live their passion and sacrifices."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "We want to take grappling and various martial disciplines to a new level in Italy and Europe, where all athletes can focus on sports as a perspective for their future. This will inevitably lead to an increase in quality throughout the territory and a sure increase in its practitioners for the benefit of all."
+    }
+  },
+  "card-next-event":{
+    "date-event": "Date event",
+    "closing-date": "Closing date",
+    "location": "Location",
+    "cashprize": "Cash prize",
+    "time-remaining": "Time remaining",
+    "subscribe": "Subscribe"
+  },
+  "countdown":{
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"	
+  },
+  "lang-switch": {
+    "title": "Change ",
+    "en": "English",
+    "it": "Italian"
+  }
+}

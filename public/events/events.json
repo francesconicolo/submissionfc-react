@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Submission FC 1",
+    "date": "2023-11-05T09:00:00.000Z",
+    "registrationClosingDate": "2023-10-31T23:59:59.000Z",
+    "location" : "Pattinodromo, 65125 Pescara PE",
+    "cashPrize" : "11.000€",
+    "linkLocation":"https://goo.gl/maps/zjTLfMYXUkuDMsvj7",
+    "linkEvent":"https://smoothcomp.com/it/event/12737",
+    "imageUrl":"./locandine/locandina_evento_1.png"
+  },
+  {
+    "id": 2,
+    "name": "Submission FC 2",
+    "date": "2024-03-03T15:00:00.000Z",
+    "registrationClosingDate":"2024-02-15T23:59:59.000Z",
+    "location" : "Pattinodromo, 65125 Pescara PE",
+    "cashPrize": "12.000€",
+    "linkLocation":"https://goo.gl/maps/zjTLfMYXUkuDMsvj7",
+    "linkEvent":"https://smoothcomp.com/en/event/14938",
+    "imageUrl":"./locandine/locandina_evento_2.png"
+  },
+  {
+    "id": 3,
+    "name": "Submission FC 3",
+    "date": "2026-03-06T15:00:00.000Z",
+    "registrationClosingDate":"2026-02-15T23:59:59.000Z",
+    "location" : "Pattinodromo, 65125 Pescara PE",
+    "cashPrize": "13.000€",
+    "linkLocation":"https://goo.gl/maps/zjTLfMYXUkuDMsvj7",
+    "linkEvent":"https://www.google.it/",
+    "imageUrl":"./locandine/locandina_evento_2.png"
+  }
+]
