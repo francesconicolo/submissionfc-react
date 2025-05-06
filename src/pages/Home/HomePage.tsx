@@ -17,8 +17,8 @@ export const HomePage: FC = () => {
   const isMobile = useIsMobile(480);
 
   return (
-    <div className="bg-background px-2 sm:px-0">
-      <div className="overlay h-full top-0 left-0">
+    <div className="bg-background sm:px-0">
+      <div className="overlay h-full top-0 left-0 ">
         {isMobile ? (
           <video
             autoPlay
@@ -36,26 +36,24 @@ export const HomePage: FC = () => {
             className="object-cover w-full h-screen "
           ></video>
         )}
+        <TypographyH1 className="text-left md:text-center text-white/80 text-5xl sm:text-7xl lg:text-8xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40  ">
+          <span className="text-primary">S</span>
+          <span className="text-4xl sm:text-6xl lg:text-7xl">UBMISSION</span>
+          <span className="text-primary"> F</span>
+          <span className="text-4xl sm:text-6xl lg:text-7xl">IGHTING</span>
+          <span className="text-primary"> C</span>
+          <span className="text-4xl sm:text-6xl lg:text-7xl ">HAMPIONSHIP</span>
+        </TypographyH1>
         <ChevronDown className="absolute left-1/2 transform -translate-x-1/2 bottom-10 animate-bounce text-primary size-10 z-30" />
       </div>
       <Separator></Separator>
 
-      <TypographyH1 className="text-center font-frank-ruhl tracking-wide py-20 text-white lg:text-7xl parallax">
-        <span className="text-primary">S</span>
-        <span className="text-3xl lg:text-5xl">UBMISSION</span>
-        <span className="text-primary"> F</span>
-        <span className="text-3xl lg:text-5xl">IGHTING</span>
-        <span className="text-primary"> C</span>
-        <span className="text-3xl lg:text-5xl ">HAMPIONSHIP</span>
-      </TypographyH1>
-
       <Separator></Separator>
       <div className=" bg-background container mx-auto mt-10 ">
-        <TypographyH2 className="font-frank-ruhl">
-          {t('next-event')}
-        </TypographyH2>
+        <TypographyH1 className="py-16">EVENTI</TypographyH1>
+
         <CardNextEvent></CardNextEvent>
-        <TypographyH2 className="font-frank-ruhl mt-10">
+        <TypographyH2 className="font-frank-ruhl">
           {t('previous-events')}
         </TypographyH2>
         <div className="mx-14">
@@ -64,13 +62,13 @@ export const HomePage: FC = () => {
       </div>
       <Separator></Separator>
 
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto ">
         <div className="flex flex-wrap">
           <div className="basis-full md:basis-1/2">
-            <TypographyH1 className="font-frank-ruhl uppercase">
+            <TypographyH1 className="font-frank-ruhl uppercase my-16">
               {t('about-us.title')}
             </TypographyH1>
-            <div className="flex flex-col gap-10 pt-16">
+            <div className="flex flex-col gap-10 ">
               <div>
                 <TypographyH2 className="font-frank-ruhl">
                   {t('about-us.foundation.title')}
@@ -91,7 +89,7 @@ export const HomePage: FC = () => {
               </div>
             </div>
           </div>
-          <div className="basis-full flex flex-wrap justify-center items-center gap-6 md:basis-1/2 md:flex-col md:px-10">
+          <div className="basis-full flex flex-wrap justify-center items-center gap-6 md:basis-1/2 md:flex-col my-16 md:px-10">
             <img
               src="./icons/logoASD.png"
               className=" h-[200px] lg:h-[400px] self-start object-contain"

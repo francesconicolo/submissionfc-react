@@ -2,7 +2,7 @@ import SwitchLocale from '../../molecules/SwitchLocale/SwitchLocale';
 import { TypographyLarge } from '@shadcn/components/Typography';
 import { useTranslation } from 'react-i18next';
 import { SwitchTheme } from '../../molecules/SwitchTheme/SwitchTheme';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useIsMobile } from '@shadcn/hooks/use-mobile';
 
@@ -28,7 +28,11 @@ export default function AppNavbar() {
             <img src="./icons/logoFull.svg" className="h-14" alt="" />
           </div>
           <div className="flex items-center h-full px-4">
-            <Menu onClick={() => setOpen(!open)} className="text-orange-300" />
+            {open ? (
+              <X onClick={() => setOpen(!open)} className="text-primary" />
+            ) : (
+              <Menu onClick={() => setOpen(!open)} className="text-primary" />
+            )}
           </div>
         </div>
         <div
