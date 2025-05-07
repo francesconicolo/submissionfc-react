@@ -37,6 +37,44 @@
     "minutes": "Minuti",
     "seconds": "Secondi"	
   },
+  "faq":{
+    "general":{
+      "title":"Generali", 
+      "questions":[
+        {
+          "question":"Quanto costa?",
+          "answer":"Recooooo."
+        },
+        {
+          "question":"Ce?",
+          "answer":"lorem ipsum"
+        }
+      ]
+    },
+    "info":{
+      "title":"Informazioni", 
+      "questions":[
+        {
+          "question":"Quanto costa?",
+          "answer":"Recooooo."
+        },
+        {
+          "question":"Cebbb?",
+          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        {
+          "question":"Cess?",
+          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        {
+          "question":"Cecczz?",
+          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+        
+      ]
+    }
+
+  },
   "lang-switch": {
     "title": "Cambia",
     "en": "Inglese",

@@ -35,12 +35,12 @@ export default function CardNextEvent() {
       data={(event) =>
         event ? (
           <>
-            <TypographyH2 className="font-frank-ruhl">
+            <TypographyH2 className="font-bebas">
               {t('next-event')}
             </TypographyH2>
             <Card className="mt-4 mb-16 relative overflow-hidden">
               <CardHeader>
-                <CardTitle className="text-5xl md:text-6xl lg:text-7xl text-center font-frank-ruhl uppercase text-primary">
+                <CardTitle className="text-5xl md:text-6xl lg:text-7xl text-center font-bebas uppercase text-primary">
                   {event.name}
                 </CardTitle>
               </CardHeader>

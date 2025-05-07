@@ -24,6 +24,7 @@
       "text": "We want to take grappling and various martial disciplines to a new level in Italy and Europe, where all athletes can focus on sports as a perspective for their future. This will inevitably lead to an increase in quality throughout the territory and a sure increase in its practitioners for the benefit of all."
     }
   },
+
   "card-next-event":{
     "date-event": "Date event",
     "closing-date": "Closing date",
@@ -37,6 +38,51 @@
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"	
+  },
+  "faq":{
+    "general":{
+      "title":"General", 
+      "questions":[
+        {
+          "question":"How much does it cost to register?",
+          "answer":"Registration is free."
+        },
+        {
+          "question":"Can I register more people?",
+          "answer":"Yes, you can register more people."
+        }
+      ]
+    },
+    "info":{
+      "title":"info", 
+      "questions":[
+        {
+          "question":"How much does it cost to register?",
+          "answer":"Registration is free."
+        },
+        {
+          "question":"Can I register more people?",
+          "answer":"Yes, you can register more people."
+        },
+        {
+          "question":"Quanto costa?",
+          "answer":"Recooooo."
+        },
+        {
+          "question":"Ce  dsds addsadsa?",
+          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        {
+          "question":"Cecsac sdasd dac?",
+          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        {
+          "question":"Cesads??ccas sdsa",
+          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      ]
+  }
+    
   },
   "lang-switch": {
     "title": "Change ",

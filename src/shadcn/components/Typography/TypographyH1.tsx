@@ -9,7 +9,7 @@ export const TypographyH1: FC<ComponentProps<'h1'>> = ({
   return (
     <h1
       className={cn(
-        'scroll-m-20 text-4xl font-extrabold tracking-tight font-frank-ruhl lg:text-5xl uppercase',
+        'scroll-m-20 text-5xl font-extrabold font-bebas tracking-tight lg:text-6xl ',
         className
       )}
       {...props}

@@ -22,7 +22,7 @@ export default function AppNavbar() {
 
   if (isMobile) {
     return (
-      <div className="fixed top-0 left-0 right-0 z-50 bg-background shadow-md h-16 transition-colors duration-500 md:hidden ">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-background shadow-md h-18 transition-colors duration-500 md:hidden ">
         <div className="container mx-auto h-full flex justify-between">
           <div className="flex items-center h-full px-4">
             <img src="./icons/logoFull.svg" className="h-14" alt="" />
@@ -66,7 +66,7 @@ export default function AppNavbar() {
     return (
       <div
         className={
-          'fixed top-0 left-0 right-0 z-50  h-18 hidden transition-colors duration-500 md:block ' +
+          'fixed top-0 left-0 right-0 z-50 h-18 hidden transition-colors duration-500 md:block ' +
           (scrollPosition > 300
             ? 'bg-background shadow-md'
             : 'bg-transparent text-white')

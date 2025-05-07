@@ -8,6 +8,7 @@ export const TemplateBasePage: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <AppNavbar />
+      <div className="mt-18"></div>
       {children}
       <div className="fixed bottom-4 right-4 md:bottom-10 md:right-14 z-30">
         <PopoverContatti></PopoverContatti>
