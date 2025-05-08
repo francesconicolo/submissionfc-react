@@ -40,49 +40,484 @@
     "seconds": "Seconds"	
   },
   "faq":{
-    "general":{
-      "title":"General", 
-      "questions":[
-        {
-          "question":"How much does it cost to register?",
-          "answer":"Registration is free."
-        },
-        {
-          "question":"Can I register more people?",
-          "answer":"Yes, you can register more people."
-        }
-      ]
+    "title":"Frequently Asked Questions",
+    "description":"Welcome to the Frequently Asked Questions (FAQ) section dedicated to addressing the most common inquiries about our tournaments. We have gathered here the most frequently asked questions from users and provided clear and concise answers to ensure a smooth experience. If you don't find the answer you're looking for, feel free to contact us directly. We're here to help!",
+    "sections":[
+      {
+        "title":"Subscription and pricing",
+        "questions":[
+          {
+            "question":"Where can I register for the competition?",
+            "answer":"Registration is available on the Smoothcomp platform. You must have a registered profile."
+          },
+          {
+            "question":"Can I change my registration after the deadline?",
+            "answer":"Yes, within 48 hours after registration closes you can request changes (e.g., team members, weight categories) by writing to iscrizioni@submissionfc.it."
+          }
+        ]
+      },
+      {
+        "title":"Cash prize",
+        "questions":[
+          {
+            "question":"What is the cash prize of the tournament?",
+            "answer":"The prize money changes for each tournament and category, read the event information."
+          },
+          {
+            "question":"How do I receive the prize if I win?",
+            "answer":"The prize is transferred to the IBAN provided by the team leader. Division of the prize is at the discretion of the team."
+          }
+        ]
+      },
+      {
+        "title":"Squads", 
+        "questions":[
+          {
+            "question":"Are the members of my team from the same academy?",
+            "answer":"The members of the squads can come from any academy/team. There are no limits on the provenance of the components, be free to create your own teams!"
+          },
+          {
+            "question":"Can the team be mixed male-female?",
+            "answer":"No. The male and female categories are separate."
+          },
+          {
+            "question":"Does the squad have a total weight limit to be respected?",
+            "answer":"No, the total weight of the components is not important. You must respect only the weight of the single. For more details, see the section 'composition of the squad - weight categories'."
+          },
+          {
+            "question":"How do you confirm a team?",
+            "answer":"The team leader should send an email to iscrizioni@submissionfc.it with the list of components and related information (first name, last name, rank, weight), specifying himself as component No. 1."
+          }
+        ]
+      },
+      {
+        "title":"Combat", 
+        "questions":[
+          {
+            "question":"In what order do members fight?",
+            "answer":"There is no set order. the team will choose, as they see fit, the order in which to field their athletes. The first team to field the first member will be drawn by lot. for more detailed information see the rules in the 'how to face a team' section"
+          },
+          {
+            "question":"Can the winner be drawn again?",
+            "answer":"No, in the same turn no, but in case of victory of the team the athlete can be drawn again in the subsequent phase."
+          }
+        ]
+      } 
+    ]
+  },
+  "regulation":{
+    "fileName": "RegulationSFC.pdf",
+    "title": "Regulation",
+    "overview": {
+      "title": "Overview",
+      "text": "Submission FC is a unique grappling competition with an innovative format for the sport: in fact, teams composed of different weights and ranks will face each other. The latter will see two members take the field at a time, who, in a submission-only match, will attempt to earn points for their team. In addition to excellent mastery of technique on the part of the individual, it will be careful strategy and collaborative teamwork that will make the difference between victory and defeat and determine who moves on to the next round. Thus, it is cunning, planning skills and collaboration that are the key players in this new “game.”"
     },
-    "info":{
-      "title":"info", 
-      "questions":[
-        {
-          "question":"How much does it cost to register?",
-          "answer":"Registration is free."
+    "title-download": "Full regulations Submission FC",
+    "muted-text-download": "Download the rules to discover the competition guidelines and get ready to perform your best with your team.",
+    "chapters": {
+      "team-composition": {
+        "title": "team composition",
+        "grades": {
+          "title": "Basic composition",
+          "overview": "Teams must consist of a minimum of 3 members and a maximum of 6 (the latter explained later).",
+          "genders": [
+              {
+                "title": "Male categories",
+                "overview": "They will be divided into 4 classes based on the experience level of the participants.",
+                "categories": [
+                  {
+                    "title": "Beginner",
+                    "description": "Only beginner athletes can register in this category. They are considered those with 0 to 2 years of experience, or, if coming from BJJ, identified as white belts.",
+                    "squads": [
+                      {
+                        "title": "Open only to",
+                        "squadComp": ["white"],
+                        "yearsOfExperience": "0-2 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Intermediate",
+                    "description": "This category is for intermediate level athletes. They are considered those who have been practicing for 2 to 4 years, or, if coming from BJJ, identified as blue belts. However, this category is not closed to beginners, who can also register here as in all higher classes.",
+                    "squads": [
+                      {
+                        "title": "Dedicated to",
+                        "squadComp": ["blue"],
+                        "yearsOfExperience": "2-4 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["white"],
+                        "yearsOfExperience": "0-2 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Advanced",
+                    "description": "This category is for advanced athletes. They are considered those with 4 to 7 years of experience, or, if coming from BJJ, identified as purple belts. This category is also open to athletes from lower classes, i.e. Beginner and Intermediate.",
+                    "squads": [
+                      {
+                        "title": "Dedicated to",
+                        "squadComp": ["purple"],
+                        "yearsOfExperience": "4-7 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["blue"],
+                        "yearsOfExperience": "2-4 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["white"],
+                        "yearsOfExperience": "0-2 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Professional",
+                    "description": "This category is for the highest level athletes. They are considered those who have been practicing for over 7 years, or, if coming from BJJ, identified as brown or black belts. This category is also open to athletes from lower classes: Advanced, Intermediate, and Beginner.",
+                    "squads": [
+                      {
+                        "title": "Dedicated to",
+                        "squadComp": ["brown", "black"],
+                        "yearsOfExperience": "+7 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["purple"],
+                        "yearsOfExperience": "4-7 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["blue"],
+                        "yearsOfExperience": "2-4 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["white"],
+                        "yearsOfExperience": "0-2 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Female categories",
+                "overview": "They will be divided into 3 classes based on the experience level of the participants.",
+                "categories": [
+                  {
+                    "title": "Beginner",
+                    "description": "This category is open to beginner and intermediate athletes. They are considered those with 0 to 4 years of experience, or, if coming from BJJ, identified as white or blue belts. Team members can be either white or blue belts. Mix as you wish and have fun with your composition!",
+                    "squads": [
+                      {
+                        "title": "Open only to",
+                        "squadComp": ["white", "blue"],
+                        "yearsOfExperience": "0-4 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Advanced",
+                    "description": "This category is for advanced level athletes. They are considered those with 4 to 7 years of experience, or, if coming from BJJ, identified as purple belts. This category is also open to athletes from lower classes, i.e. Beginner.",
+                    "squads": [
+                      {
+                        "title": "Dedicated to",
+                        "squadComp": ["purple"],
+                        "yearsOfExperience": "4-7 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["white", "blue"],
+                        "yearsOfExperience": "0-4 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Professional",
+                    "description": "This category is for the highest level athletes. They are considered those who have been practicing for over 7 years, or, if coming from BJJ, identified as brown or black belts. This category is also open to athletes from lower classes, i.e. Advanced and Beginner.",
+                    "squads": [
+                      {
+                        "title": "Dedicated to",
+                        "squadComp": ["brown", "black"],
+                        "yearsOfExperience": "+7 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["purple"],
+                        "yearsOfExperience": "4-7 years of practice",
+                        "operator": "or"
+                      },
+                      {
+                        "title": "Also open to",
+                        "squadComp": ["white", "blue"],
+                        "yearsOfExperience": "0-4 years of practice",
+                        "operator": "or"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+          "note": "The division into classes of different levels ensures that all athletes face opponents with similar experience. However, athletes who feel confident are allowed to compete in higher categories, face more experienced opponents, and try to win the highest prize. In fact, each category is specific to a certain level but is also open to lower-level athletes."
         },
-        {
-          "question":"Can I register more people?",
-          "answer":"Yes, you can register more people."
+        "weights": {
+          "title": "Weight categories",
+          "genders": [
+            {
+              "title": "Male",
+              "description": "Each team must include two weight categories: -76 and +76*; Every team must have at least one person in the lower weight category (for a practical example see the tables below):",
+              "squads": [
+                {
+                  "nameExample": "1st member",
+                  "squadComp": ["-76 kg"],
+                  "operator": ""
+                },
+                {
+                  "nameExample": "2nd member",
+                  "squadComp": ["-76 kg", "+76 kg"],
+                  "operator": "or"
+                },
+                {
+                  "nameExample": "3rd member",
+                  "squadComp": ["-76 kg", "+76 kg"],
+                  "operator": "or"
+                }
+              ],
+              "note": "* with a maximum weight limit of 120kg."
+            },
+            {
+              "title": "Female",
+              "description": "Each team must include two weight categories: -61 and +61*. Every team must have at least one person in the lower weight category (for a practical example see the tables below):",
+              "squads": [
+                {
+                  "nameExample": "1st member",
+                  "squadComp": ["-61 kg"],
+                  "operator": ""
+                },
+                {
+                  "nameExample": "2nd member",
+                  "squadComp": ["-61 kg", "+61 kg"],
+                  "operator": "or"
+                },
+                {
+                  "nameExample": "3rd member",
+                  "squadComp": ["-61 kg", "+61 kg"],
+                  "operator": "or"
+                }
+              ],
+              "note": "* with a maximum weight limit of 90kg."
+            }
+          ]
         },
-        {
-          "question":"Quanto costa?",
-          "answer":"Recooooo."
+        "squad-6": {
+          "title": "team of 6",
+          "paragraphs": [
+            "At the time of registration, teams can choose to have from one to three substitutes, thus forming teams of 4 to a maximum of 6 members. These substitutes may replace starters in any match, as long as they respect the same or a lower weight category. It is mandatory to choose the 3 players who will compete before they enter the match area; from that moment, no further substitutions will be allowed."
+          ]
         },
-        {
-          "question":"Ce  dsds addsadsa?",
-          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        "age-gender": {
+          "title": "gender and age",
+          "paragraphs": [
+            "There will be male-only and female-only categories.",
+            "There are no age categories: athletes of any age can register as long as they are at least 16 years old. For minors, specific forms with parental signature are required. Both forms must be submitted, already filled out and signed, on the day of the event during check-in. A copy of the parent's ID must be attached."
+          ],
+          "note": "forms for minors:"
         },
-        {
-          "question":"Cecsac sdasd dac?",
-          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        },
-        {
-          "question":"Cesads??ccas sdsa",
-          "answer":"dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        "squad-identification": {
+          "title": "team identification",
+          "paragraphs": [
+            "Each team must choose a name and register with it. Throughout the event, the team will be identified by its unique name.",
+            "There are no limits on the terms used as long as they are not vulgar or offensive. The only limit is the maximum number of allowed words: 5."
+          ]
         }
-      ]
-  }
-    
+      },
+      "combat":{
+        "title":"how face a team?",
+        "paragraphs":["The competition begins with one of the two teams (drawn at random) choosing the first member to take the field. The opposing team will then have one minute to decide who to field against the first opponent. The winning athlete will earn a point for their team and the chance to choose first who to put on the mat for the second match (the time available is always one minute). The opposing team, again in one minute, will choose the next challenger. It will continue in this mode until the end of the 3 matches."],
+        "note":" all 3 matches will always be played, regardless of the result and thus whether or not the match is won. This is to give all athletes the chance to fight and to win one of the bonus prizes."
+      },
+      "match-rules":{
+        "title":"Competition Rules",
+        "paragraphs":[
+            "The individual matches will last 6 minutes for the all the categories. They will take place in 'submission only' mode, so there will be no points system, but victory can only be achieved by submission (or disqualification of the opponent or medical stoppage). In the event that, when time runs out, there is no winner, the fight will end in a draw and no points will be awarded to either team.",
+            "The finals of the 'Advanced' and 'Professional' categories will last 10 minutes per match."
+          ],
+        "explanations":{
+          "title":"Some explanations",
+          "explanations-faq":[
+            {
+              "question":"How to decide the winner?",
+              "answer":"After the 3 matches, the team with the most points will win the match. In case the two teams have accumulated equal scores, both teams will have to select one member each. The two selected athletes will play an EBI overtime [see EBI overtime section]."
+            },
+            {
+              "question":"Who can face?",
+              "answer":"All team members can face each other, regardless of their level or weight."
+            },
+            {
+              "question":"What happens if a member of my team gets hurt?",
+              "answer":"If I have a team of more than three people I can implement a simple substitution. On the other hand, if my team consists of only 3 people, I can continue the competition normally, considering, however, that I will have a point lost forfeited."
+            }
+          ]
+        }
+      },
+      "illegal-moves":{
+        "title":"Prohibited actions and techniques",
+        "beginner":{
+          "title": "Beginner and Intermediate category",
+          "list":[
+            "Slamming.",
+            "“Full Nelson”.",
+            "Any crucifix.",
+            "Spiking your opponent on their head while attempting a takedown.",
+            "Spiking your opponent's head when opponent is on your back.",
+            "Roll forward while someone is on your back.",
+            "Striking of any kind.",
+            "Eye gouging or fish hooking.",
+            "Grabbing the ears.",
+            "Hair pulling.",
+            "Holding of less than 4 fingers or less than 5 toes.",
+            "Thumbing.",
+            "Scratching and pinching.",
+            "Punching of any kind.",
+            "Kicking of any kind.",
+            "Biting.",
+            "Squeezing or putting pressure on the groin area.",
+            "Hands, knees or elbows on face.",
+            "Use slippery substances on body or clothing.",
+            "Crossface guillotine twisting the chin.",
+            "Use holding of the T-Shirt or shorts.",
+            "Neck crank.",
+            "Can opener.",
+            "Blocking opponent's nose or mouth with hands.",
+            "Any crossface hold or crossface choke.",
+            "Choking with hands wrapped around the throat (Rape Choke).",
+            "Heel hook.",
+            "Any foot locks that twist the knee."
+          ]
+        },
+        "advanced":{
+          "title":"Advanced and Professional category",
+          "list":[
+              "Slamming is allowed only if you are locked in a submission. (If your opponent lets go of the submission while you are about to slam you must let go of the slam)",
+              "“Full Nelson”.",
+              "Any crucifix.",
+              "Spiking your opponent on their head while attempting a takedown.",
+              "Spiking your opponent's head when opponent is on your back.",
+              "Roll forward while someone is on your back.",
+              "Striking of any kind.",
+              "Eye gouging or fish hooking.",
+              "Grabbing the ears.",
+              "Hair pulling.",
+              "Holding of less than 4 fingers or less than 5 toes.",
+              "Thumbing.",
+              "Scratching and pinching.",
+              "Punching of any kind.",
+              "Kicking of any kind.",
+              "Biting.",
+              "Squeezing or putting pressure on the groin area.",
+              "Knees on face.",
+              "Use slippery substances on body or clothing.",
+              "Crossface guillotine twisting the chin.",
+              "Use holding of the T-Shirt or shorts.",
+              "Neck cranks that trap both shoulders and puts downward pressure on the neck."
+          ]
+        }
+      },
+      "disqualification":{
+        "title":"Disqualification cases",
+        "list":[ "Performing an illegal technique [see illegal techniques section].",
+        "Reaching the third penalty [see penalty section].",
+        " Unsportsmanlike conduct, i.e.: using verbal insults directed at opponents, referees, coordinators, officials, the public and any other figure in the establishment; making gestures that the referees or officials deem to be uneducational, offensive, discriminatory, denigrating (examples pointing at the male member and any other phallocratic and/or sexist gesture, vigorous shouting against one's opponent and any other gesture as a sign of dominance, raising the middle finger against one's opponent, inappropriate gestures of political or religious orientation, etc.)",
+        "'No show'. The following shall be considered 'No show': the failure of the entire team to show up at the weight by the designated time ; the failure of a team member to show up at the weight by the designated time (in this case the individual member and not the entire team will be disqualified); the failure of the team to show up in the competition area at the time of their turn; the failure of a team member to show up in the competition area at the time of their turn (in this house the individual member and not the entire team will be disqualified).",
+        "Not being within the set weight limits."]
+      },
+      "penalties":{
+        "title":"Penalties",
+        "paragraphs":["A penalty is received for passivity in the fight and is assessed and decreed by the referee. Passivity is considered a stalemate in the fight where one or both athletes do not attempt a breakthrough in the fight either on the ground or standing. In the case of the standing fight, an athlete who persistently flees the opponent's takedown attempts, allows himself to be carried off the mat, and never takes initiative is considered passive."],
+        "note":"passivity and resulting penalty points are awarded to the individual athlete (if deemed the only passive) or to both (if deemed both passive)."
+      },
+      "EBI-overtime":{
+        "title":"EBI - overtime",
+        "paragraphs":[
+          "Each competitor gets a shot at either their opponent's back, with both leg hooks and a seat belt, OR the spider web position aka arm bar position. The competitor on offense gets the choice. In Spider web, the competitor on offense gets one deep hook, either arm, and the other hand has to be planted on the mat, palm down, it can be right next to opponent’s bum or leg. Competitors must be in a perpendicular angle, meaning the guy on defense can’t be turning away or turning into his opponent.",
+          "There is the TOP of the round and the BOTTOM of the round. ",
+          "The competitor that goes first on offense at the top of round one will be referred to as competitor A. The competitor on defense at the top of round one will be referred to as competitor B. ",
+          "Once there is an escape or submission in the top of round one, that half of the round is over. The competitor that was just on defense, competitor B, now gets a shot at the back or spider web, his choice, this will be the bottom of round one. ",
+          "If A secured a submission at the top of round one, then B has to secure a submission faster than A at the bottom of round one to win the match or he loses the match. ",
+          "If at the top of round one A does not secure a submission and B escapes, then we go to the bottom of round one. If B secures a submission the match is over, B wins. If B does not secure a submission and A escapes, we go to a second OverTime round. ",
+          "If after 3 rounds it is still tied up due to escapes, all the escapes times are added up. The competitor with the quickest overall escape time wins the match.",
+          "There is a 2 minute time limit in each of the overtime rounds. ",
+          "The competitor on offense can move from the back to spider web and back, and to the truck and back, and back and forth from these 3 positions as many times as they want and the round is still live. The back is still live as long as the seat belt or double underhooks is in place, losing both leg hooks does not stop time as long as the seat belt or double underhooks is still in place. The round ends in any other position than the back, spider web and the truck unless caught in a submission 'in transition'. For example, going to an arm triangle from the back which puts the offensive competitor in side control or mount keeps the round live until the escape is complete or there is a tap. Going from spider web to a triangle which puts the offensive competitor on his back in guard is still live until a full escape is achieved. If from that triangle we go to the oma plata position, it is still live until the competitor on defense pulls out of the position. Going to a leg attack from spider web or from the back in OT is not legal. Only leg attacks from the truck are legal in OT.",
+          "IMPORTANT: If the combatant on defense pulls off a submission it's an escape."
+        ]
+      },
+      "dress-code":{
+        "title":"Competition clothing",
+        "paragraphs":[
+          "The competition uniform must consist of:",
+          "A jersey (short- or long-sleeved) of elastic material (close-fitting to the skin), which must be long enough to cover the torso up to the spring of the trousers. The jersey must be at least 10% of the colour of the belt corresponding to the athlete concerned. Other colours permitted on the remaining area, if any, are black and white.",
+          "Shorts must be free of pockets, zips, buttons and any other type of plastic or metal that could present a risk to the opponent. The shorts must be long enough to cover at least half of the thigh. The permitted colours are: black, white and the belt colour corresponding to the grade of the athlete concerned (here with no obligation or restriction on the area to be covered). Compression shorts and leggings are also permitted, provided they meet the above criteria."],
+        "note":"A small area of red is allowed for black belts, as long as it does not denature the color of the athlete's grade.",
+        "explanations":{
+          "question":"If I don't have an assigned belt? If the sport you come from does not assign belts then follow the diagram below to work out what your competition uniform should be:",
+          "examples":[
+            {
+              "color":"white",
+              "dress":"your uniform will match that of a white belt.",
+              "yearsOfExperience":"If you practice from 0 to 2 years"  
+            },
+            {
+              "color":"blue",
+              "dress":"your uniform will match that of a blue belt.",
+              "yearsOfExperience":"If you practice from 2 to 4 years"
+            },
+            {
+              "color":"purple",
+              "dress":"your uniform will match that of a purple belt.",
+              "yearsOfExperience":"If you practice from 4 to 7 years"
+            },
+            {
+              "color":"brown",
+              "dress":"your uniform will match that of a brown belt.",
+              "yearsOfExperience":"If you practice from 7 to 8 years"
+            },
+            {
+              "color":"black",
+              "dress":"your uniform will match that of a black belt.",
+              "yearsOfExperience":"If you have been practising for more than 8 years"
+            }
+          ]
+        }
+      },
+      "weight-in":{
+        "title":"Weight in",
+        "paragraphs":[
+            "All team members must report together at the time of weigh-in, so one team at a time will be verified and registered.",
+            "Weighing is to be done in competition uniform [see section on Competition Clothing].",
+            "When to show up for the weight? A 2-hour window will be opened for the weight, which will close one hour before the actual start of the competitions. it is mandatory to make the weight in the time window",
+            "How to present yourself at the weigh-in? You must be in possession of an identity document; you must wear a competition uniform that is in good condition and does not present images with discriminatory and offensive references; you must have the shortest possible fingernails and toenails; you must be in good physical and mental condition and personal hygiene."
+        ]
+      }
+    }
+  },
+  "utils":{
+    "download": "Download",
+    "print": "Print",
+    "share": "Share"
   },
   "lang-switch": {
     "title": "Change ",

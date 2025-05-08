@@ -17,7 +17,7 @@ export const HomePage: FC = () => {
   const isMobile = useIsMobile(480);
 
   return (
-    <div className="bg-background sm:px-0">
+    <div className="bg-background ">
       <div className="overlay h-full top-0 left-0 -mt-18 ">
         {isMobile ? (
           <video
@@ -36,7 +36,7 @@ export const HomePage: FC = () => {
             className="object-cover w-full h-screen "
           ></video>
         )}
-        <div className="text-left md:text-center text-white/80 text-6xl sm:text-7xl lg:text-9xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 font-bebas ">
+        <div className="text-left md:text-center text-white/80 text-6xl sm:text-7xl lg:text-9xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 font-bebas tracking-wide ">
           <span className="text-primary">S</span>
           <span className="text-5xl sm:text-6xl lg:text-8xl">UBMISSION</span>
           <span className="text-primary"> F</span>
@@ -48,8 +48,7 @@ export const HomePage: FC = () => {
       </div>
       <Separator></Separator>
 
-      <Separator></Separator>
-      <div className=" bg-background container mx-auto mt-10 ">
+      <div className=" bg-background container mx-auto mt-10 px-2 sm:px-0">
         <TypographyH1 className="py-16">EVENTI</TypographyH1>
 
         <CardNextEvent></CardNextEvent>
@@ -62,7 +61,7 @@ export const HomePage: FC = () => {
       </div>
       <Separator></Separator>
 
-      <div className="container mx-auto ">
+      <div className="container mx-auto px-2 sm:px-0">
         <div className="flex flex-wrap">
           <div className="basis-full md:basis-1/2">
             <TypographyH1 className="font-bebas uppercase my-16">

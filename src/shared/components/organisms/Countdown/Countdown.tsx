@@ -41,34 +41,42 @@ export default function Countdown({ date }: { date: Date }) {
   }, [date]);
 
   return (
-    <div className="w-full mt-4 flex justify-center ">
+    <div className="w-full mt-4 flex justify-center font-bebas ">
       <div className="grid grid-cols-2 gap-5 text-7xl md:flex md:gap-6 md:text-7xl">
         <div className="flex flex-col justify-center items-center min-w-[100px]">
           <div className="font-bold">
             {countdown.d.length === 1 ? `0${countdown.d}` : countdown.d}
           </div>
-          <div className="text-sm">{t('countdown.days')}</div>
+          <div className="text-sm font-medium tracking-wider">
+            {t('countdown.days')}
+          </div>
         </div>
         <div className="hidden md:border-r-4 md:block"></div>
         <div className="flex flex-col justify-center items-center min-w-[100px]">
           <div className="font-bold">
             {countdown.h.length === 1 ? `0${countdown.h}` : countdown.h}
           </div>
-          <div className="text-sm">{t('countdown.hours')}</div>
+          <div className="text-sm font-medium tracking-wider">
+            {t('countdown.hours')}
+          </div>
         </div>
         <div className="hidden md:border-r-4 md:block"></div>
         <div className="flex flex-col justify-center items-center min-w-[100px]">
           <div className="font-bold">
             {countdown.m.length === 1 ? `0${countdown.m}` : countdown.m}
           </div>
-          <div className="text-sm">{t('countdown.minutes')}</div>
+          <div className="text-sm font-medium tracking-wider">
+            {t('countdown.minutes')}
+          </div>
         </div>
         <div className="hidden md:border-r-4 md:block"></div>
         <div className="flex flex-col justify-center items-center min-w-[100px]">
           <div className="font-bold">
             {countdown.s.length === 1 ? `0${countdown.s}` : countdown.s}
           </div>
-          <div className="text-sm">{t('countdown.seconds')}</div>
+          <div className="text-sm font-medium tracking-wider">
+            {t('countdown.seconds')}
+          </div>
         </div>
       </div>
     </div>

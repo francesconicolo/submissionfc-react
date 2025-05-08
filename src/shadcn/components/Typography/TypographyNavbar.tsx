@@ -1,20 +1,20 @@
 import { cn } from '@shadcn/lib/utils';
 import { FC, ComponentProps } from 'react';
 
-export const TypographyH1: FC<ComponentProps<'h1'>> = ({
+export const TypographyNavbar: FC<ComponentProps<'div'>> = ({
   children,
   className,
   ...props
 }) => {
   return (
-    <h1
+    <div
       className={cn(
-        'scroll-m-20 text-5xl font-extrabold tracking-wider font-bebas lg:text-6xl ',
+        'text-lg font-bebas tracking-widest hover:text-primary transition-colors duration-400 cursor-pointer ',
         className
       )}
       {...props}
     >
       {children}
-    </h1>
+    </div>
   );
 };

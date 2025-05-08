@@ -98,7 +98,7 @@ export default function CardNextEvent() {
                         <TypographySmall>
                           {t('card-next-event.cashprize')}
                         </TypographySmall>
-                        <TypographyH3 className="text-7xl text-center md:text-left">
+                        <TypographyH3 className="text-7xl text-center font-bebas tracking-wide md:text-left">
                           {event.cashPrize}
                         </TypographyH3>
                       </div>
