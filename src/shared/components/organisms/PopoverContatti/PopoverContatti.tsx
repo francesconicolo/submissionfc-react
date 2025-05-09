@@ -1,16 +1,25 @@
 import {
+  TypographyH4,
   TypographyLarge,
   TypographyMuted
 } from '@shadcn/components/Typography';
 import { Button } from '@shadcn/components/ui/button';
 
-import { Label } from '@shadcn/components/ui/label';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger
 } from '@shadcn/components/ui/popover';
-import { MessageCircleQuestion } from 'lucide-react';
+import { Separator } from '@shadcn/components/ui/separator';
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  MessageCircleQuestion,
+  Phone,
+  Youtube
+} from 'lucide-react';
 
 export function PopoverContatti() {
   return (
@@ -23,40 +32,60 @@ export function PopoverContatti() {
           <MessageCircleQuestion className="size-7" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80">
-        <div className="grid gap-4">
-          <div className="space-y-2">
-            <h4 className="font-medium leading-none">Contatti</h4>
-            <TypographyMuted className="text-sm text-muted-foreground">
-              Ti risponderemo il prima possibile!
+      <PopoverContent className="w-80 mr-10 pb-0">
+        <TypographyH4>Contatti</TypographyH4>
+        <TypographyMuted>Ti risponderemo il prima possibile!</TypographyMuted>
+        <div className="py-3">
+          <div className="flex items-center gap-2">
+            <MapPin className="size-5" />
+            <TypographyLarge className="">Indirizzo</TypographyLarge>
+          </div>
+          <div className="ml-7">
+            <TypographyMuted>
+              SS 263, 147, 66010 <br />
+              Villamagna CH <br /> Italia
             </TypographyMuted>
           </div>
-          <div className="grid gap-6">
-            <div className="gap-4">
-              <Label htmlFor="width">Per informazioni generali</Label>
-              <TypographyLarge className="pl-2">
-                info@submissionfc.it
-              </TypographyLarge>
-            </div>
-            <div className="gap-4">
-              <Label htmlFor="width">Per informazioni sulle iscrizioni</Label>
-              <TypographyLarge className="pl-2">
-                iscrizioni@submissionfc.it
-              </TypographyLarge>
-            </div>
-            <div className="gap-4">
-              <Label htmlFor="width">Per proposte commerciali</Label>
-              <TypographyLarge className="pl-2">
-                business@submissionfc.it
-              </TypographyLarge>
-            </div>
-            <div className="gap-4">
-              <Label htmlFor="width">Telefono</Label>
-              <TypographyLarge className="pl-2">+39 3274540665</TypographyLarge>
-              <TypographyLarge className="pl-2">+39 3280539062</TypographyLarge>
-              <TypographyLarge className="pl-2">+39 3347348731</TypographyLarge>
-            </div>
+        </div>
+        <div className="py-3">
+          <div className="flex items-center gap-2">
+            <Phone className="size-5" />
+            <TypographyLarge className="">Telefono</TypographyLarge>
           </div>
+          <div className="ml-7">
+            <TypographyMuted className="cursor-pointer hover:text-foreground">
+              +39 3274540665
+            </TypographyMuted>
+            <TypographyMuted className="cursor-pointer hover:text-foreground">
+              +39 3280539062
+            </TypographyMuted>
+            <TypographyMuted className="cursor-pointer hover:text-foreground">
+              +39 3347348731
+            </TypographyMuted>
+          </div>
+        </div>
+        <div className="py-3">
+          <div className="flex items-center gap-2">
+            <Mail className="size-5" />
+            <TypographyLarge className="">Email</TypographyLarge>
+          </div>
+          <div className="ml-7">
+            <TypographyMuted className="cursor-pointer hover:text-foreground">
+              info@submissionfc.it
+            </TypographyMuted>
+            <TypographyMuted className="cursor-pointer hover:text-foreground">
+              iscrizioni@submissionfc.it
+            </TypographyMuted>
+            <TypographyMuted className="cursor-pointer hover:text-foreground">
+              business@submissionfc.it
+            </TypographyMuted>
+          </div>
+        </div>
+        <Separator></Separator>
+        <div className="flex justify-center gap-6 py-3">
+          <Instagram className="text-muted-foreground size-5 hover:text-foreground" />
+          <Facebook className="text-muted-foreground size-5 hover:text-foreground" />
+          <Youtube className="text-muted-foreground size-5 hover:text-foreground" />
         </div>
       </PopoverContent>
     </Popover>

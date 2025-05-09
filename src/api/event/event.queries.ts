@@ -14,7 +14,6 @@ export const useGetAllEventsQuery = () => {
     queryFn: () => EventApis.getAllEvents()
   });
 };
-
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const useGetAllEventsPreviousQuery = () => {
   return useQuery({
@@ -27,5 +26,13 @@ export const useGetAllEventsNextQuery = () => {
   return useQuery({
     queryKey: EventKeys.next,
     queryFn: () => EventApis.getAllNextEvents()
+  });
+};
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export const useGetEventById = (id: number) => {
+  return useQuery({
+    queryKey: EventKeys.next,
+    queryFn: () => EventApis.getEventById(id)
   });
 };

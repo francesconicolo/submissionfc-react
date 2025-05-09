@@ -27,5 +27,15 @@ export const EventApis = {
     );
     const nextEvents = mappedRes.filter((event) => event.date > new Date());
     return nextEvents.length > 0 ? nextEvents[0] : null;
+  },
+  async getEventById(id: number): Promise<Event | null> {
+    const res = await axios.get('/events/events.json');
+    const validRes = validateObjectSchema(z.array(eventSchema), res.data);
+    const mappedRes = validRes.map((event) =>
+      FromEventResponseDtoToEventModel(event)
+    );
+    const event = mappedRes.find((event) => event.id === id);
+    if (!event) throw new Error('Event not found');
+    return event;
   }
 };

@@ -323,3 +323,38 @@ body {
   background-attachment: fixed;
 }
 
+
+#photos {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 4;
+  -moz-column-gap: 10px;
+  column-count: 4;
+  column-gap: 10px;
+
+}
+
+#photos img {
+  width: 100%;
+  height: auto !important;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 980px) {
+  #photos {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  #photos {
+    column-count: 1;
+  }
+}

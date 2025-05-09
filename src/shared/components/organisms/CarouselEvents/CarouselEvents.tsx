@@ -12,8 +12,10 @@ import { useGetAllEventsPreviousQuery } from 'src/api/event/event.queries';
 import { useNavigate } from 'react-router';
 
 export function CarouselEvents() {
-  const getAllPreviousEventsQuery = useGetAllEventsPreviousQuery();
   const navigate = useNavigate();
+
+  const getAllPreviousEventsQuery = useGetAllEventsPreviousQuery();
+
   return (
     <AsyncQueryView
       query={getAllPreviousEventsQuery}

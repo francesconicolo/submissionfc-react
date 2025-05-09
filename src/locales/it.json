@@ -35,7 +35,8 @@
     "days": "Giorni",
     "hours": "Ore",
     "minutes": "Minuti",
-    "seconds": "Secondi"	
+    "seconds": "Secondi",
+    "expired": "Evento concluso"
   },
   "faq":{
     "title": "Domande frequenti",

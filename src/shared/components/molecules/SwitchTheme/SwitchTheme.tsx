@@ -3,7 +3,7 @@ import { Moon, Sun } from 'lucide-react';
 import { Switch } from '@shadcn/components/ui/switch';
 import { useTheme } from 'src/shared/hooks/useTheme';
 
-export function SwitchTheme() {
+export function SwitchTheme({ colors }: { colors?: string }) {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
@@ -13,7 +13,7 @@ export function SwitchTheme() {
   return (
     <div className="flex items-center space-x-2">
       <Label htmlFor="theme">
-        <Sun className="size-4 text-foreground" />
+        <Sun className={'size-4 ' + colors} />
       </Label>
       <Switch
         id="theme"
@@ -22,7 +22,7 @@ export function SwitchTheme() {
         className="mr-2 "
       />
       <Label htmlFor="theme">
-        <Moon className="size-4 text-foreground" />
+        <Moon className={'size-4 ' + colors} />
       </Label>
     </div>
   );

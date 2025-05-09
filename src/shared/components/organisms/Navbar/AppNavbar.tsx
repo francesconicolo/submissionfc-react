@@ -86,7 +86,7 @@ export default function AppNavbar() {
           <div className="flex items-center justify-between h-full">
             <div className="w-[180px] flex  " onClick={() => navigate('/')}>
               <img
-                src="./icons/logoFull.svg "
+                src="/icons/logoFull.svg "
                 className="h-16 cursor-pointer "
                 alt=""
               />
@@ -105,8 +105,14 @@ export default function AppNavbar() {
                 {t('navbar.faq')}
               </TypographyNavbar>
             </nav>
-            <div className="flex gap-4 items-center justify-end w-[180px]  ">
-              <SwitchTheme></SwitchTheme>
+            <div className={' flex gap-4 items-center justify-end w-[180px] '}>
+              <SwitchTheme
+                colors={
+                  location.pathname != '/' || scrollPosition > 300
+                    ? 'text-foreground'
+                    : 'text-white'
+                }
+              ></SwitchTheme>
               <SwitchLocale></SwitchLocale>
             </div>
           </div>

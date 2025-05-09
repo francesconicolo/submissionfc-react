@@ -7,13 +7,14 @@ import {
 import { useGetAllEventsNextQuery } from 'src/api/event/event.queries';
 import { AsyncQueryView } from '../../utils/AsyncQueryView/AsyncQueryView';
 import {
+  TypographyH1,
   TypographyH2,
   TypographyH3,
   TypographySmall
 } from '@shadcn/components/Typography';
 import { useTranslation } from 'react-i18next';
 import i18n from 'src/config/i18n';
-import { Calendar, CalendarX2, Map } from 'lucide-react';
+import { Calendar, CalendarX2, LoaderCircle, Map } from 'lucide-react';
 
 import Countdown from '../../organisms/Countdown/Countdown';
 import { Button } from '@shadcn/components/ui/button';
@@ -40,14 +41,14 @@ export default function CardNextEvent() {
             </TypographyH2>
             <Card className="mt-4 mb-16 relative overflow-hidden">
               <CardHeader>
-                <CardTitle className="text-5xl md:text-6xl lg:text-7xl text-center font-bebas uppercase text-primary">
+                <CardTitle className="text-5xl md:text-6xl lg:text-7xl text-center font-bebas tracking-wide uppercase z-40 text-primary">
                   {event.name}
                 </CardTitle>
               </CardHeader>
               <img
-                src="./icons/logoFull.svg"
+                src="/icons/logoFull.svg"
                 alt="logo SubmissionFC"
-                className="absolute z-0 opacity-5 w-[800px] h-[800px] "
+                className="absolute z-0 opacity-5 w-[800px] h-[800px] select-none "
                 style={{ objectFit: 'contain' }}
               ></img>
               <CardContent className="flex w-full flex-wrap justify-center ">
@@ -93,7 +94,6 @@ export default function CardNextEvent() {
                           </a>
                         </div>
                       </div>
-
                       <div>
                         <TypographySmall>
                           {t('card-next-event.cashprize')}
@@ -104,9 +104,6 @@ export default function CardNextEvent() {
                       </div>
                     </div>
                     <div className="text-center ">
-                      <TypographySmall>
-                        {t('card-next-event.time-remaining')}
-                      </TypographySmall>
                       <Countdown date={event.date}></Countdown>
                       <div className="w-full flex justify-center mt-10 mb-4 xl:mb-0">
                         <a
@@ -137,6 +134,18 @@ export default function CardNextEvent() {
           <></>
         )
       }
+      loading={
+        <div className="h- flex items-center justify-center">
+          <LoaderCircle className="size-20 animate-spin" />
+        </div>
+      }
+      error={() => (
+        <div className="h-screen flex items-center justify-center">
+          <TypographyH1 className="text-center">
+            Evento non trovato!
+          </TypographyH1>
+        </div>
+      )}
     />
   );
 }

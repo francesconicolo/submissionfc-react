@@ -1,3 +1,5 @@
+import { TypographySmall } from '@shadcn/components/Typography';
+import { LoaderCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -40,45 +42,70 @@ export default function Countdown({ date }: { date: Date }) {
     }
   }, [date]);
 
-  return (
-    <div className="w-full mt-4 flex justify-center font-bebas ">
-      <div className="grid grid-cols-2 gap-5 text-7xl md:flex md:gap-6 md:text-7xl">
-        <div className="flex flex-col justify-center items-center min-w-[100px]">
-          <div className="font-bold">
-            {countdown.d.length === 1 ? `0${countdown.d}` : countdown.d}
-          </div>
-          <div className="text-sm font-medium tracking-wider">
-            {t('countdown.days')}
-          </div>
-        </div>
-        <div className="hidden md:border-r-4 md:block"></div>
-        <div className="flex flex-col justify-center items-center min-w-[100px]">
-          <div className="font-bold">
-            {countdown.h.length === 1 ? `0${countdown.h}` : countdown.h}
-          </div>
-          <div className="text-sm font-medium tracking-wider">
-            {t('countdown.hours')}
-          </div>
-        </div>
-        <div className="hidden md:border-r-4 md:block"></div>
-        <div className="flex flex-col justify-center items-center min-w-[100px]">
-          <div className="font-bold">
-            {countdown.m.length === 1 ? `0${countdown.m}` : countdown.m}
-          </div>
-          <div className="text-sm font-medium tracking-wider">
-            {t('countdown.minutes')}
-          </div>
-        </div>
-        <div className="hidden md:border-r-4 md:block"></div>
-        <div className="flex flex-col justify-center items-center min-w-[100px]">
-          <div className="font-bold">
-            {countdown.s.length === 1 ? `0${countdown.s}` : countdown.s}
-          </div>
-          <div className="text-sm font-medium tracking-wider">
-            {t('countdown.seconds')}
-          </div>
-        </div>
+  if (date <= new Date()) {
+    return (
+      <div className="w-full mt-4 flex justify-center font-bebas text-5xl">
+        {t('countdown.expired')}
       </div>
-    </div>
-  );
+    );
+  } else {
+    if (
+      countdown.d === '0' &&
+      countdown.h === '0' &&
+      countdown.m === '0' &&
+      countdown.s === '0'
+    )
+      return (
+        <div className="h-[100px] flex items-center justify-center">
+          <LoaderCircle className="size-20 animate-spin" />
+        </div>
+      );
+    else
+      return (
+        <>
+          <TypographySmall>
+            {t('card-next-event.time-remaining')}
+          </TypographySmall>
+          <div className="w-full mt-4 flex justify-center font-bebas">
+            <div className="grid grid-cols-2 gap-5 text-7xl md:flex md:gap-6 md:text-7xl">
+              <div className="flex flex-col justify-center items-center min-w-[100px]">
+                <div className="font-bold">
+                  {countdown.d.length === 1 ? `0${countdown.d}` : countdown.d}
+                </div>
+                <div className="text-sm font-medium tracking-wider">
+                  {t('countdown.days')}
+                </div>
+              </div>
+              <div className="hidden md:border-r-4 md:block"></div>
+              <div className="flex flex-col justify-center items-center min-w-[100px]">
+                <div className="font-bold">
+                  {countdown.h.length === 1 ? `0${countdown.h}` : countdown.h}
+                </div>
+                <div className="text-sm font-medium tracking-wider">
+                  {t('countdown.hours')}
+                </div>
+              </div>
+              <div className="hidden md:border-r-4 md:block"></div>
+              <div className="flex flex-col justify-center items-center min-w-[100px]">
+                <div className="font-bold">
+                  {countdown.m.length === 1 ? `0${countdown.m}` : countdown.m}
+                </div>
+                <div className="text-sm font-medium tracking-wider">
+                  {t('countdown.minutes')}
+                </div>
+              </div>
+              <div className="hidden md:border-r-4 md:block"></div>
+              <div className="flex flex-col justify-center items-center min-w-[100px]">
+                <div className="font-bold">
+                  {countdown.s.length === 1 ? `0${countdown.s}` : countdown.s}
+                </div>
+                <div className="text-sm font-medium tracking-wider">
+                  {t('countdown.seconds')}
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      );
+  }
 }

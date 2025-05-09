@@ -9,5 +9,6 @@ export const eventSchema = z.object({
   cashPrize: z.string(),
   linkLocation: z.string(),
   linkEvent: z.string(),
-  imageUrl: z.string()
+  imageUrl: z.string(),
+  assetsUrl: z.string()
 });

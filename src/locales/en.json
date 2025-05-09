@@ -37,7 +37,8 @@
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
-    "seconds": "Seconds"	
+    "seconds": "Seconds",
+    "expired": "Event ended"
   },
   "faq":{
     "title":"Frequently Asked Questions",

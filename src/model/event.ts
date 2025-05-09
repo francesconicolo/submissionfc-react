@@ -8,4 +8,5 @@ export type Event = {
   linkLocation: string;
   linkEvent: string;
   imageUrl: string;
+  assetsUrl: string;
 };

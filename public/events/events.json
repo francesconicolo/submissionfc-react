@@ -8,7 +8,8 @@
     "cashPrize" : "11.000€",
     "linkLocation":"https://goo.gl/maps/zjTLfMYXUkuDMsvj7",
     "linkEvent":"https://smoothcomp.com/it/event/12737",
-    "imageUrl":"./locandine/locandina_evento_1.png"
+    "imageUrl":"/locandine/locandina_evento_1.png",
+    "assetsUrl":"/assetsEvents/SFC1/"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "cashPrize": "12.000€",
     "linkLocation":"https://goo.gl/maps/zjTLfMYXUkuDMsvj7",
     "linkEvent":"https://smoothcomp.com/en/event/14938",
-    "imageUrl":"./locandine/locandina_evento_2.png"
+    "imageUrl":"/locandine/locandina_evento_2.png",
+    "assetsUrl":"/assetsEvents/SFC2/"
   },
   {
     "id": 3,
@@ -30,6 +32,7 @@
     "cashPrize": "13.000€",
     "linkLocation":"https://goo.gl/maps/zjTLfMYXUkuDMsvj7",
     "linkEvent":"https://www.google.it/",
-    "imageUrl":"./locandine/locandina_evento_2.png"
+    "imageUrl":"/locandine/locandina_evento_2.png",
+    "assetsUrl":"/assetsEvents/SFC3/"
   }
 ]

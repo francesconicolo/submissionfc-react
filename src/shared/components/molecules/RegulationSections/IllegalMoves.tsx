@@ -30,7 +30,7 @@ export default function IllegalMoves() {
       </TypographySectionTitle>
       {listAdvanced.map((paragraph: string, index: number) => (
         <TypographyPRegulation key={index} className="flex items-center">
-          <Dot />
+          <Dot className="shrink-0" />
           {paragraph}
         </TypographyPRegulation>
       ))}

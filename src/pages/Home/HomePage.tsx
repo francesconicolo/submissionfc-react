@@ -24,16 +24,18 @@ export const HomePage: FC = () => {
             autoPlay
             loop
             muted
-            src="./videos/Mobile480.mp4"
+            src="/videos/Mobile480.mp4"
             className="object-cover w-full h-screen"
+            poster="/sfondi/lastFrame.webp"
           ></video>
         ) : (
           <video
             autoPlay
             loop
             muted
-            src="./videos/Desktop720.mp4"
+            src="/videos/Desktop720.mp4"
             className="object-cover w-full h-screen "
+            poster="/sfondi/lastFrame.webp"
           ></video>
         )}
         <div className="text-left md:text-center text-white/80 text-6xl sm:text-7xl lg:text-9xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 font-bebas tracking-wide ">

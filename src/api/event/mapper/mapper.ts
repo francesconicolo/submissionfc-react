@@ -14,6 +14,7 @@ export const FromEventResponseDtoToEventModel = (
     cashPrize: source.cashPrize,
     linkLocation: source.linkLocation,
     linkEvent: source.linkEvent,
-    imageUrl: source.imageUrl
+    imageUrl: source.imageUrl,
+    assetsUrl: source.assetsUrl
   };
 };
